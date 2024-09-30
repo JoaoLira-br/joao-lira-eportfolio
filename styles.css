@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --blue-black: #243e63;
+  --tw-text-opacity: 1;
+  --tw-bg-opacity: 1;
+  --purple: rgb(100 21 255 / var(--tw-text-opacity));
+  --darker-purple: rgb(80 11 200 / var(--tw-text-opacity));
+  --grey: rgb(226, 232, 240);
+}
+*:not(html) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* border: 1px solid grey; */
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* 
+
+NAVIGATION
+
+*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+.nav__link--list{
+    display: flex;
+}
+.nav__link{
+    margin: 0 12px;
+}
+.nav__link--anchor{
+    font-size: 1rem;
+    color: #242424;
+    font-weight: 700;
+}
+li{
+    list-style-type: none;
+}
+#personal-logo {
+    width: 3.125rem;
+    height: 3.125rem;
+    /* filter: invert(100%); */
+    background-color: none;
+}
+
+.fa-adjust{
+    font-size: 1.25rem;
+}
