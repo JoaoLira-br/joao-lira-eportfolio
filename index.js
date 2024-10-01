@@ -30,9 +30,6 @@ function moveBackground(event) {
     shape.style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
   }
 
-  shapes.forEach((shape) => {
-    shape.style.transform = `translate(${x}px, ${y}px)`;
-  });
 }
 
 // async function loading(event){
