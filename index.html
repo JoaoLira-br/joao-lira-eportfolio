@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="./assets/J l ..png" alt="">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/J l ..png" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click">
+            <i class="fas fa-adjust"></i>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I`m João.</h1>
+          <p class="header__para">
+            I`m a <b class="orange">Frontend Software Engineer</b> with a
+            passion for crafting web applications with superb user experiences.
+            <br />
+            Here`s a bit more <b class="orange">about me</b>
+          </p>
+        </div>
+        <div class="about-me__links">
+          <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-victor-lira/"
+            target="_blank"
+            class="about-me__link click"
+          >
+            <figure class="about-me__link--image-mask">
+              <img
+                class="about-me__link--image"
+                src="./assets/linkedin-in-brands-solid.svg"
+                alt="linkedin link icon"
+              />
             </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
-                </li>
-                <li class="nav__link click">
-                    <i class="fas fa-adjust"></i>
-                </li>
-            </ul>
-        </nav>
-        <header class="header">
-            <div class="header__content">
-                <h1 class="title">Hey</h1>
-                <h1 class="title orange">I`m João.</h1>
-                <p class="header__para">I`m a <b class="orange">Frontend Software Engineer</b>  with a passion for crafting web applications with superb user experiences.
-                    <br>
-                    Here`s a bit more <b class="orange">about me</b></p>
-            </div>
-            <div class="about-me__links">
-                <a 
-                href="https://www.linkedin.com/in/jo%C3%A3o-victor-lira/"
-                target="_blank"
-                class="about-me__link click"
-              >
-                <figure class="about-me__link--image-mask">
-                  <img
-                    class="about-me__link--image"
-                    src="./assets/linkedin-in-brands-solid.svg"
-                    alt="linkedin link icon"
-                  />
-                </figure>
-              </a>
-              <a
-                href="https://github.com/JoaoLira-br"
-                target="_blank"
-                class="about-me__link click"
-              >
-                <figure class="about-me__link--image-mask">
-                  <img
-                    class="about-me__link--image"
-                    src="./assets/github-brands-solid.svg"
-                    alt="github link icon"
-                  />
-                </figure>
-              </a>
-              <!-- <a
+          </a>
+          <a
+            href="https://github.com/JoaoLira-br"
+            target="_blank"
+            class="about-me__link click"
+          >
+            <figure class="about-me__link--image-mask">
+              <img
+                class="about-me__link--image"
+                src="./assets/github-brands-solid.svg"
+                alt="github link icon"
+              />
+            </figure>
+          </a>
+          <!-- <a
                 href="mailto:joao.lirajl@outlook.com"
                 target="_blank"
                 class="about-me__link click"
@@ -76,33 +94,124 @@
                   />
                 </figure>
               </a> -->
-              <a
-              href="https://drive.google.com/file/d/1h87L4-E8KbL_apNUr444yvlWK7uTGf11/view?usp=sharing"
-              target="_blank"
-              class="about-me__link click"
-            >
-              <figure class="about-me__link--image-mask">
-                <img
-                  class="about-me__link--image"
-                  src="./assets/file-pdf-regular.svg"
-                  alt="resume link icon"
-                />
-              </figure>
-            </a>
+          <a
+            href="https://drive.google.com/file/d/1h87L4-E8KbL_apNUr444yvlWK7uTGf11/view?usp=sharing"
+            target="_blank"
+            class="about-me__link click"
+          >
+            <figure class="about-me__link--image-mask">
+              <img
+                class="about-me__link--image"
+                src="./assets/file-pdf-regular.svg"
+                alt="resume link icon"
+              />
+            </figure>
+          </a>
+        </div>
+      </header>
+      <button class="mail__btn">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">Here`s a bit about me</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+            <p class="modal__para">
+                I`m a 24 year old Brazilian <b class="orange">frontend software engineer</b> with a
+                passion for crafting web applications with <b class="orange">superb user experiences</b> and high usability.
+                <br>
+                I currently work on solving difficult organizational problems for scalability of a social worker organization as well as a big company from Australia 
+            </p>
+            <div class="modal__languages">
+                <figure class="modal__language">
+                    <img class="modal__language--img"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                      alt="">
+                    <span class="language__name">HTML</span>
+                  </figure>
+                  <figure class="modal__language">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                      alt="">
+                    <span class="language__name">CSS</span>
+                  </figure>
+                  <figure class="modal__language">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                      alt="">
+                    <span class="language__name">JavaScript</span>
+                  </figure>
+                  <figure class="modal__language">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                      alt="">
+                    <span class="language__name">React</span>
+                  </figure>
+                  <figure class="modal__language">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="python">
+                        <path d="M18.231 7.357h.001v-.004z"></path>
+                        <path fill="#F2BB30" d="M20.699 17.748c1.666 0 2.282-1.162 2.861-2.904.6-1.794.574-3.52 0-5.818-.413-1.655-1.194-2.904-2.861-2.904h-2.147v2.541c0 1.971-1.672 3.632-3.578 3.632H9.252c-1.565 0-2.861 1.339-2.861 2.909v5.454c0 1.553 1.35 2.464 2.861 2.909 1.81.53 3.552.626 5.721 0 1.441-.418 2.861-1.26 2.861-2.909v-2.181h-5.717v-.728h8.582zm-5.367 2.181c.594 0 1.077.488 1.077 1.088 0 .606-.482 1.093-1.077 1.093a1.09 1.09 0 0 1-1.077-1.093 1.088 1.088 0 0 1 1.077-1.088z"></path>
+                        <path fill="#35668F" d="M3.444 17.749H5.41v-2.615c0-1.891 1.634-3.558 3.578-3.558h5.721c1.591 0 2.861-1.312 2.861-2.909V3.209c0-1.553-1.307-2.717-2.861-2.978-1.918-.317-4.002-.299-5.721.006l.001-.001c-2.422.428-2.86 1.322-2.86 2.977v2.181h5.727v.729H3.98C2.314 6.123.856 7.125.402 9.027c-.525 2.181-.546 3.541 0 5.818.406 1.693 1.377 2.904 3.042 2.904zM8.63 3.937a1.084 1.084 0 0 1-1.077-1.088A1.089 1.089 0 0 1 8.63 1.756c.59 0 1.077.492 1.077 1.093S9.225 3.937 8.63 3.937z"></path>
+                      </svg>
+                      <span class="language__name">Python</span>
+                  </figure>
             </div>
-        </header>
-        <button class="mail__btn">
-
-            <i class="fas fa-envelope"></i>
-
-        </button>
-        <a href="#projects" class="scroll">
-            <div class="scroll__icon click">
-                
             </div>
-        </a>
+        <div class="modal__half modal__contact"></div>
+      </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="orange">Projects.</span>
 
+                </h1>
+                <ul class="projects__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            
+                            <img class="project__img" src="./assets/blinker mockup.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, excepturi voluptatem eius voluptate soluta esse mollitia eveniet asperiores, unde architecto itaque. Ex consequatur mollitia neque iure voluptas perspiciatis, aspernatur optio ullam quasi porro distinctio, aliquid velit cum ipsam cupiditate repudiandae!</p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__description--link">
+                                        <i class="fab fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
     <script src="./index.js"></script>
-</body>
+  </body>
+  <footer>
+    <div class="container">
+        <div class="row footer__row">
+            <figure>
+                <img class="footer__logo--img" src="./assets/J l ..png" alt="">
+            </figure>
+            <div class="footer__social--list">
+                <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Github</a>
+                <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">LinkedIn</a>
+                <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Contact</a>
+                <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Resume</a>
+            </div>
+            <div class="footer__copyright">Copyright &copy; 2021 João Lira </div>
+        </div>
+    </div>
+  </footer>
 </html>
