@@ -1,18 +1,39 @@
 let isModalOpen = false;
 let contrastToggle = false;
-function toggleContrast(){
-    console.log("working");
+const landing = document.querySelector("#landing-page");
+// this: to avoid scaling by a magic number on moveBackground()
+const scaleFactor = 1 / 20;
 
-    contrastToggle = !contrastToggle;
-    if(contrastToggle){
-        document.body.classList.add("dark-theme");
-    }else{
+function toggleContrast() {
+  console.log("working");
 
-        document.body.classList.remove("dark-theme");
-    }
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
 }
 
+function moveBackground(event) {
+  const shapes = document.querySelectorAll(".shape");
 
+  const x = event.clientX * scaleFactor;
+  const y = event.clientY * scaleFactor;
+  console.log(x, y);
+
+  for (let i = 0; i < shapes.length; i++) {
+    const shape = shapes[i];
+    const isOdd = i % 2 !== 0;
+    // this: to add variation of movement to shapes
+    const boolInt = isOdd ? -1 : 1;
+    shape.style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
+  }
+
+  shapes.forEach((shape) => {
+    shape.style.transform = `translate(${x}px, ${y}px)`;
+  });
+}
 
 // async function loading(event){
 //     // to avoid auto-refresh from form submission
@@ -54,8 +75,6 @@ async function contact(event) {
     );
   }
 }
-
-
 
 function toggleModal() {
   const loading = document.querySelector(".modal__overlay--loading");
