@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+    rel="icon"
+    href="./assets/1.ico"
+    type="image/x-icon"
+  />
     <script src="./index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
@@ -37,7 +42,7 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -57,12 +62,12 @@
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey</h1>
-          <h1 class="title orange">I`m João.</h1>
+          <h1 class="title orange text--verdigris">I`m João.</h1>
           <p class="header__para">
-            I`m a <b class="orange">Frontend Software Engineer</b> with a
+            I`m a <b class="orange text--verdigris">Frontend Software Engineer</b> with a
             passion for crafting web applications with superb user experiences.
             <br />
-            Here`s a bit more <b class="orange click" onclick="toggleModal()">about me</b>
+            Here`s a bit more <b class="orange text--verdigris click" onclick="toggleModal()">about me</b>
           </p>
         </div>
         <div class="about-me__links">
@@ -71,7 +76,7 @@
             target="_blank"
             class="about-me__link click"
           >
-            <figure class="about-me__link--image-mask">
+            <figure class="about-me__link--image-mask bg--verdigris">
               <img
                 class="about-me__link--image"
                 src="./assets/linkedin-in-brands-solid.svg"
@@ -84,7 +89,7 @@
             target="_blank"
             class="about-me__link click"
           >
-            <figure class="about-me__link--image-mask">
+            <figure class="about-me__link--image-mask bg--verdigris">
               <img
                 class="about-me__link--image"
                 src="./assets/github-brands-solid.svg"
@@ -110,7 +115,7 @@
             target="_blank"
             class="about-me__link click"
           >
-            <figure class="about-me__link--image-mask">
+            <figure class="about-me__link--image-mask bg--verdigris">
               <img
                 class="about-me__link--image"
                 src="./assets/file-pdf-regular.svg"
@@ -133,8 +138,8 @@
             <h3 class="modal__title modal__title--about">Here`s a bit about me</h3>
             <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
             <p class="modal__para">
-                I`m a 24 year old Brazilian <b class="orange">frontend software engineer</b> with a
-                passion for crafting web applications with <b class="orange">superb user experiences</b> and high usability.
+                I`m a 24 year old Brazilian <b class="orange text--verdigris">frontend software engineer</b> with a
+                passion for crafting web applications with <b class="orange text--verdigris">superb user experiences</b> and high usability.
                 <br>
                 I currently work on solving difficult organizational problems for scalability of a social worker organization as well as a big company from Australia 
             </p>
@@ -168,6 +173,31 @@
                       </svg>
                       <span class="language__name">Python</span>
                   </figure>
+                  <figure class="modal__language">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 134" id="php">
+                        <g fill-rule="evenodd">
+                          <ellipse cx="128" cy="66.63" fill="#8993BE" rx="128" ry="66.63"></ellipse>
+                          <path fill="#232531" d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z"></path>
+                        </g>
+                      </svg>
+                      <span class="language__name">PHP</span>
+                  </figure>
+                  <figure class="modal__language">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="mysql">
+                        <path fill="#00618A" d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927-4.894-3.092-17.448-9.817-21.072-.975-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z"></path>
+                      </svg>
+                      <span class="language__name">MySQL</span>
+                  </figure>
+                  <figure class="modal__language">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="java">
+                        <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zM44.629 84.455s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"></path>
+                        <path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"></path>
+                        <path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zM90.609 93.041c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"></path>
+                        <path fill="#EA2D2E" d="M76.491 1.587s12.968 12.976-12.303 32.923c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815 8.548-12.834 32.229-19.059 26.998-39.667z"></path>
+                        <path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"></path>
+                      </svg>
+                      <span class="language__name">Java</span>
+                  </figure>
             </div>
             </div>
         <div class="modal__half modal__contact">
@@ -182,15 +212,15 @@
             <form id="contact__form" onsubmit="contact(event)">
                 <div class="form__item">
                   <label class="form__item--label">Name</label>
-                  <input class="input" name="user_name" type="text"></input>
+                  <input class="input" name="user_name" type="text" required></input>
                 </div>
                 <div class="form__item">
                   <label class="form__item--label">Email</label>
-                  <input class="input" name="user_email" type="email"></input>
+                  <input class="input" name="user_email" type="email" required></input>
                 </div>
                 <div class="form__item">
                   <label class="form__item--label">Message</label>
-                  <textarea class="input" name="message" type="text"></textarea>
+                  <textarea class="input" name="message" type="text" required></textarea>
                 </div>
                 <button id="contact__submit" class="form__submit">
                   Send it my way
@@ -219,12 +249,60 @@
         <div class="container">
             <div class="row">
                 <h1 class="section__title">
-                    Here are some of my <span class="orange">Projects.</span>
+                    Here are some of my <span class="orange text--verdigris">Projects.</span>
 
                 </h1>
                 <ul class="projects__list">
-                    <li class="project">
-                        <div class="project__wrapper">
+                    <li class="project ">
+                        <div class="project__wrapper project__0">
+                            
+                            <img class="project__img" src="./assets/blinker mockup.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, excepturi voluptatem eius voluptate soluta esse mollitia eveniet asperiores, unde architecto itaque. Ex consequatur mollitia neque iure voluptas perspiciatis, aspernatur optio ullam quasi porro distinctio, aliquid velit cum ipsam cupiditate repudiandae!</p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__description--link">
+                                        <i class="fab fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project ">
+                        <div class="project__wrapper project__1">
+                            
+                            <img class="project__img" src="./assets/blinker mockup.png" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, excepturi voluptatem eius voluptate soluta esse mollitia eveniet asperiores, unde architecto itaque. Ex consequatur mollitia neque iure voluptas perspiciatis, aspernatur optio ullam quasi porro distinctio, aliquid velit cum ipsam cupiditate repudiandae!</p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__description--link">
+                                        <i class="fab fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project ">
+                        <div class="project__wrapper show project__2">
                             
                             <img class="project__img" src="./assets/blinker mockup.png" alt="">
                             <div class="project__wrapper--bg"></div>

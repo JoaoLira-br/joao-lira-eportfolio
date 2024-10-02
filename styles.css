@@ -11,6 +11,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 *:not(html) {
   margin: 0;
   padding: 0;
@@ -122,6 +123,9 @@ nav,
   opacity: 0;
   visibility: hidden;
   transition: all 400ms 200ms;
+}
+.modal--open :not(.modal):active{
+
 }
 
 /* 
@@ -236,8 +240,8 @@ MODAL
   margin: 12px 0 24px 0;
 }
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: #50c5b7;
+  border: 2px solid #50c5b7;
   color: white;
   font-weight: 700;
   width: 100%;
@@ -253,8 +257,8 @@ MODAL
   background-color: transparent;
 }
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: #50c5b7;
+  color: #50c5b7;
 }
 
 /* this: great example of the POWER of REUSABLE CSS */
@@ -270,7 +274,7 @@ MODAL
 }
 
 .modal__overlay--loading {
-  background-color: blue;
+  background-color: #242424;
   font-size: 5rem;
   z-index: -1;
 }
@@ -392,6 +396,12 @@ LANDING PAGE
 }
 .orange {
   color: #f06449 !important;
+}
+.text--verdigris{
+  color: #50c5b7 !important;
+}
+.bg--verdigris{
+    background-color: #50c5b7 !important;
 }
 
 .about-me__links {
@@ -568,6 +578,32 @@ PROJECTS
 .project__description--para {
   margin: 16px 0;
 }
+.project{
+    /* position: relative; */
+    margin: 64px 0;
+}
+/* this: selector targets elements that have both classes applied directly to them. */
+ .project__wrapper.show{
+    opacity: 1;
+    transform: translateX(0%);
+} 
+
+
+
+.project__wrapper{
+  opacity: 0;
+  transition: all 1s ease;
+} 
+
+.project__0,
+.project__2{
+  transform: translateX(100%);
+}
+.project__1{
+  transform: translateX(-100%);
+}
+
+
 
 /* 
 

@@ -20,7 +20,6 @@ function moveBackground(event) {
 
   const x = event.clientX * scaleFactor;
   const y = event.clientY * scaleFactor;
-  console.log(x, y);
 
   for (let i = 0; i < shapes.length; i++) {
     const shape = shapes[i];
@@ -29,7 +28,6 @@ function moveBackground(event) {
     const boolInt = isOdd ? -1 : 1;
     shape.style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
   }
-
 }
 
 // async function loading(event){
@@ -55,6 +53,8 @@ function moveBackground(event) {
 
 async function contact(event) {
   // to avoid auto-refresh from form submission
+  let loading = document.querySelector(".modal__overlay--loading");
+  let success = document.querySelector(".modal__overlay--success");
   event.preventDefault();
   loading.classList.add("modal__overlay--visible");
   try {
@@ -84,3 +84,43 @@ function toggleModal() {
   //toggle modal
   document.body.classList.add("modal--open");
 }
+
+
+// Select all project divs
+
+const observerCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("show", entry.isIntersecting);
+    if (entry.isIntersecting) observer.unobserve(entry.target);
+  });
+};
+
+const observerOptions = {
+  threshold: 0.2,
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+const projects = document.querySelectorAll(".project__wrapper");
+projects.forEach((project) => {
+  observer.observe(project);
+});
+
+
+// const observer = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+//         if(entry.isIntersecting){
+//             entry.target.classList.add("show");
+//         }
+
+//   })
+
+// }, {
+//     threshold: 0.9
+// })
+
+// const cards = document.querySelectorAll(".card");
+// cards.forEach(card => {
+//     observer.observe(card);
+// })
+// console.log('pimba');
