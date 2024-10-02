@@ -88,18 +88,16 @@ function toggleModal() {
 
 // Select all project divs
 
-const observerCallback = (entries, observer) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    entry.target.classList.toggle("show", entry.isIntersecting);
-    if (entry.isIntersecting) observer.unobserve(entry.target);
-  });
-};
-
-const observerOptions = {
-  threshold: 0.2,
-};
-
-const observer = new IntersectionObserver(observerCallback, observerOptions);
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+  }
+  })}, {
+    threshold: 0.3
+  }
+)
 
 const projects = document.querySelectorAll(".project__wrapper");
 projects.forEach((project) => {
