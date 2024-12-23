@@ -53,6 +53,11 @@ textarea {
   height: 100px;
   margin-top: 6px;
 }
+i{
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+}
 a {
   text-decoration: none;
 }
@@ -116,6 +121,7 @@ nav,
   opacity: 1;
   visibility: visible;
   transition: all 600ms 800ms;
+  padding: 4%;
 }
 .modal--open nav,
 .modal--open .scroll,
@@ -330,7 +336,7 @@ DARK THEME
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
 .dark-theme .header__para {
-  color: white;
+  color: black;
 }
 
 .dark-theme section {
@@ -356,7 +362,10 @@ DARK THEME
   background-color: white;
   color: #242424;
 }
+.fa-envelope{
+width: 50px;
 
+}
 /* .modal__para{
     max-width: ;
 } */
