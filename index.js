@@ -3,6 +3,7 @@ let contrastToggle = false;
 const landing = document.querySelector("#landing-page");
 // this: to avoid scaling by a magic number on moveBackground()
 const scaleFactor = 1 / 20;
+const PROJECT__IMGS = [["./assets/react-cinephile-dark.png", "./assets/react-cinephile-white.png"], ["./assets/sirleia-rocha-hair-dark.png","./assets/sirleia-rocha-hair.png"], ["./assets/library-ecommerce-dark.png", "./assets/library-ecommerce.png"], ["./assets/youtube-clone-dark.png", "./assets/youtube-clone.png"], ["./assets/iphone-dark.png","./assets/iphone.png"]]
 
 function toggleContrast() {
   console.log("working");
@@ -10,10 +11,23 @@ function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
     document.body.classList.add("dark-theme");
+
   } else {
     document.body.classList.remove("dark-theme");
   }
+  updateImageThemes();
 }
+function updateImageThemes(){
+  const projects = document.querySelectorAll(".project");
+  for(let i = 0; i < projects.length; i++){
+    const project = projects[i];
+    const img = project.querySelector("img");
+    img.src = !contrastToggle ? PROJECT__IMGS[i][0] : PROJECT__IMGS[i][1];
+  }
+}
+
+
+
 
 function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape");
@@ -103,6 +117,8 @@ const projects = document.querySelectorAll(".project__wrapper");
 projects.forEach((project) => {
   observer.observe(project);
 });
+
+
 
 
 // const observer = new IntersectionObserver(entries => {

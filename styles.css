@@ -336,7 +336,7 @@ DARK THEME
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
 .dark-theme .header__para {
-  color: black;
+  color: white;
 }
 
 .dark-theme section {
@@ -605,10 +605,12 @@ PROJECTS
 } 
 
 .project__0,
-.project__2{
+.project__2,
+.project__4{
   transform: translateX(100%);
 }
-.project__1{
+.project__1,
+.project__3{
   transform: translateX(-100%);
 }
 
