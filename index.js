@@ -109,7 +109,7 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
   }
   })}, {
-    threshold: 0.3
+    threshold: 0.05
   }
 )
 
@@ -117,24 +117,19 @@ const projects = document.querySelectorAll(".project__wrapper");
 projects.forEach((project) => {
   observer.observe(project);
 });
+const viewportHeight = window.innerHeight;
+projects.forEach((project) => {
+    if (typeof project === "undefined" || project === null) {
+        return;
+    }
+    const threshold = Math.min(1, viewportHeight / project.clientHeight * 0.6); // project fills 60% of the viewport
+    observer.current[key] = new IntersectionObserver(
+        callback,
+        {threshold}
+    );
+    observer.current[key].observe(project);
+});
 
 
 
 
-// const observer = new IntersectionObserver(entries => {
-// 	entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//             entry.target.classList.add("show");
-//         }
-
-//   })
-
-// }, {
-//     threshold: 0.9
-// })
-
-// const cards = document.querySelectorAll(".card");
-// cards.forEach(card => {
-//     observer.observe(card);
-// })
-// console.log('pimba');

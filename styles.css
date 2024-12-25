@@ -532,6 +532,7 @@ PROJECTS
 }
 .project__img {
   width: 100%;
+  height: 100%;
   transition: all 600ms ease;
 }
 .project__wrapper {
@@ -594,7 +595,7 @@ PROJECTS
 /* this: selector targets elements that have both classes applied directly to them. */
  .project__wrapper.show{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
 } 
 
 
@@ -607,14 +608,83 @@ PROJECTS
 .project__0,
 .project__2,
 .project__4{
-  transform: translateX(100%);
+  transform: translateY(10%);
 }
 .project__1,
 .project__3{
-  transform: translateX(-100%);
+  transform: translateY(10%);
+}
+.section__subtitle{
+  padding-bottom: 10px;
+  border-bottom: 2px solid #242424;
+}
+.dark-theme .section__subtitle{
+  border-bottom: 2px solid #f4f4f4 !important;
+  color: #f0f0f0f0;
+
+}
+.other-projects__container{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.other-project__project{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.other-project__header{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #242424;
 }
 
+  .dark-theme .other-project__header{
+    color: #f0f0f0a0;
+  
+  }
 
+.other-project__languages{
+  display: flex;
+  gap: 8px;
+}
+.other-project__links{
+  margin-right: auto;
+  margin-left: 16px;
+  display: flex;
+  gap: 8px;
+
+
+}
+.other-project__link{
+  text-decoration: none !important;
+  color: inherit;
+
+
+
+}
+.other-project__list{
+  font-size: 1rem;
+  margin-left: 2%;
+}
+.dark-theme .other-project__list{
+  color: #f0f0f0a0;
+
+}
+.other-project__bullet{
+  margin-top: 8px;
+  list-style-type: disc;
+
+}
+.lang{
+  background-color: #50c5b7;
+  color: white;
+  min-width: 50px;
+  border-radius: 0.75rem;
+  padding: 0.25rem 1rem;
+}
 
 /* 
 
@@ -733,6 +803,23 @@ width = 80vw
   .modal__half {
     width: 100%;
   }
+  .project__description--title{
+    font-size: 1.5rem;
+  }
+  .project__description--sub-title{
+    font-size: 1rem;
+  }
+  .project__description--para{
+    font-size: 0.70rem;
+    text-align: justify;
+    width: 80%;
+  }
+  .section__subtitle{
+    font-size: 2rem;
+  }
+ 
+  
+
 }
 
 @media (max-width: 30em) {
@@ -759,6 +846,28 @@ width = 80vw
   }
   .modal__half{
     padding: 40px;
+  }
+  .project__description--title{
+    font-size: 1.5rem;
+  }
+  .project__description--sub-title{
+    font-size: 1rem;
+  }
+ 
+  .section__title{
+    font-size: 2rem;
+  }
+  .other-project__header{
+    font-size: 0.80rem;
+  }
+  .other-project__languages{
+    flex-wrap: wrap;
+  }
+  .lang{
+    font-size: 0.75rem;
+  }
+  .other-project__list{
+    font-size: 0.75rem;
   }
 }
 
