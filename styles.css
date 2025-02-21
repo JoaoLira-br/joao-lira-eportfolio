@@ -597,6 +597,11 @@ PROJECTS
     opacity: 1;
     transform: translateY(0%);
 } 
+.project__img--smaller{
+  width: 100%;
+  height: 100%;
+  transition: all 600ms ease;
+}
 
 
 
